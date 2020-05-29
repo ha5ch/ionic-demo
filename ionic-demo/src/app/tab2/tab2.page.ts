@@ -28,9 +28,6 @@ export class Tab2Page {
       this.imgSrv.update(imageData);
       this.router.navigate(['tabs/tab3']);
     })
-    .catch(e => {
-      alert("error: " + JSON.stringify(e));
-    });
+    .catch(e => alert("error: " + JSON.stringify(e)));
   }
-
 }
